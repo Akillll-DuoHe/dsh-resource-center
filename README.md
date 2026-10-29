@@ -15,9 +15,17 @@ DSH 的「插件」页能装、能停、能配，但很难一眼看清"我现在
 
 ## 安装
 
-**官方桌面客户端（DeepSeek Harness Desktop）**：打开 **设置 → 插件**，搜索 `dsh-resource-center`，点安装，然后重启客户端。
+**从 GitHub 直接装（现在就能用）**：
 
-**`dsh web` / CLI**：
+```sh
+dsh plugin --profile web add github:Akillll-DuoHe/dsh-resource-center
+```
+
+首次安装会提示 `allowBuilds`：把命令打印出来的那一行加进 profile 的 `pnpm-workspace.yaml`，再跑一次即可。
+
+**官方桌面客户端（DeepSeek Harness Desktop）**：打开 **设置 → 插件**，在市场里搜索 `dsh-resource-center`（上架后可见），点安装，然后重启客户端。
+
+**npm 包（待发布）**：
 
 ```sh
 dsh plugin --profile web add dsh-resource-center
@@ -68,11 +76,21 @@ DSH's Plugins page can install, stop and configure, but it is hard to see at a g
 
 ### Install
 
+From GitHub (works today):
+
+```sh
+dsh plugin --profile web add github:Akillll-DuoHe/dsh-resource-center
+```
+
+The first install asks to allow the build script: add the line pnpm prints to the profile's `pnpm-workspace.yaml` and run it again.
+
+In DSH Desktop: **Settings → Plugins**, search `dsh-resource-center` in the market (visible once listed), install, restart.
+
+From npm (pending publish):
+
 ```sh
 dsh plugin --profile web add dsh-resource-center
 ```
-
-Or, in DSH Desktop: **Settings → Plugins**, search `dsh-resource-center`, install, restart.
 
 ### Requirements
 
