@@ -33,6 +33,16 @@ dsh plugin --profile web add dsh-resource-center
 
 装完重启 `dsh web`，侧边栏会出现「资源中心」入口。
 
+## 国内镜像（Gitee）
+
+GitHub 在部分网络下不稳定，国内可直接用 Gitee 镜像：
+
+**https://gitee.com/Akillll-DuoHe/dsh-resource-center**
+
+```sh
+dsh plugin --profile web add git+https://gitee.com/Akillll-DuoHe/dsh-resource-center.git
+```
+
 ## 能做什么
 
 - **一页总览**：插件包数、功能模块数、运行中 / 已停用 / 异常的数量。
@@ -90,6 +100,14 @@ From npm (pending publish):
 
 ```sh
 dsh plugin --profile web add dsh-resource-center
+```
+
+### Gitee mirror (China)
+
+**https://gitee.com/Akillll-DuoHe/dsh-resource-center**
+
+```sh
+dsh plugin --profile web add git+https://gitee.com/Akillll-DuoHe/dsh-resource-center.git
 ```
 
 ### Requirements
