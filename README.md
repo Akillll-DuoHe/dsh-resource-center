@@ -21,7 +21,7 @@ DSH 的「插件」页能装、能停、能配，但很难一眼看清"我现在
 dsh plugin --profile web add github:Akillll-DuoHe/dsh-resource-center
 ```
 
-首次安装会提示 `allowBuilds`：把命令打印出来的那一行加进 profile 的 `pnpm-workspace.yaml`，再跑一次即可。
+这个插件是纯 JavaScript，没有构建脚本，安装时不需要 `allowBuilds` 授权，也不会额外联网装依赖。
 
 **官方桌面客户端（DeepSeek Harness Desktop）**：打开 **设置 → 插件**，在市场里搜索 `dsh-resource-center`（上架后可见），点安装，然后重启客户端。
 
@@ -92,7 +92,7 @@ From GitHub (works today):
 dsh plugin --profile web add github:Akillll-DuoHe/dsh-resource-center
 ```
 
-The first install asks to allow the build script: add the line pnpm prints to the profile's `pnpm-workspace.yaml` and run it again.
+This plugin is plain JavaScript with no build step, so no `allowBuilds` approval is needed and nothing extra is fetched.
 
 In DSH Desktop: **Settings → Plugins**, search `dsh-resource-center` in the market (visible once listed), install, restart.
 
